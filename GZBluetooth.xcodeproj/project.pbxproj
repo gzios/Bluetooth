@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C220F1821EE8F47400FC4299 /* GZTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C220F1811EE8F47400FC4299 /* GZTableView.m */; };
+		C220F1861EE92F4A00FC4299 /* GZGameKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = C220F1851EE92F4A00FC4299 /* GZGameKitController.m */; };
+		C220F1891EE92F9A00FC4299 /* GZCoreBluetoothController.m in Sources */ = {isa = PBXBuildFile; fileRef = C220F1881EE92F9A00FC4299 /* GZCoreBluetoothController.m */; };
+		C220F18B1EE931AF00FC4299 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C220F18A1EE931AF00FC4299 /* GameKit.framework */; };
+		C220F1931EE9427D00FC4299 /* GZMultipeerConnectivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = C220F1921EE9427D00FC4299 /* GZMultipeerConnectivityController.m */; };
+		C220F1961EE949E200FC4299 /* GZMultipeerConnectivityQueryController.m in Sources */ = {isa = PBXBuildFile; fileRef = C220F1951EE949E200FC4299 /* GZMultipeerConnectivityQueryController.m */; };
+		C251D8901EE8DF7600D10985 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C251D88F1EE8DF7600D10985 /* main.m */; };
+		C251D8931EE8DF7600D10985 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C251D8921EE8DF7600D10985 /* AppDelegate.m */; };
+		C251D8961EE8DF7600D10985 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C251D8951EE8DF7600D10985 /* ViewController.m */; };
+		C251D8991EE8DF7600D10985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C251D8971EE8DF7600D10985 /* Main.storyboard */; };
+		C251D89B1EE8DF7600D10985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C251D89A1EE8DF7600D10985 /* Assets.xcassets */; };
+		C251D89E1EE8DF7600D10985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C251D89C1EE8DF7600D10985 /* LaunchScreen.storyboard */; };
+		C251D8A71EE8E06700D10985 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C251D8A61EE8E06700D10985 /* MultipeerConnectivity.framework */; };
+		C251D8A91EE8E2D600D10985 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C251D8A81EE8E2D600D10985 /* CoreBluetooth.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C220F1801EE8F47400FC4299 /* GZTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZTableView.h; sourceTree = "<group>"; };
+		C220F1811EE8F47400FC4299 /* GZTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZTableView.m; sourceTree = "<group>"; };
+		C220F1841EE92F4A00FC4299 /* GZGameKitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZGameKitController.h; sourceTree = "<group>"; };
+		C220F1851EE92F4A00FC4299 /* GZGameKitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZGameKitController.m; sourceTree = "<group>"; };
+		C220F1871EE92F9A00FC4299 /* GZCoreBluetoothController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZCoreBluetoothController.h; sourceTree = "<group>"; };
+		C220F1881EE92F9A00FC4299 /* GZCoreBluetoothController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZCoreBluetoothController.m; sourceTree = "<group>"; };
+		C220F18A1EE931AF00FC4299 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		C220F1911EE9427D00FC4299 /* GZMultipeerConnectivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZMultipeerConnectivityController.h; sourceTree = "<group>"; };
+		C220F1921EE9427D00FC4299 /* GZMultipeerConnectivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZMultipeerConnectivityController.m; sourceTree = "<group>"; };
+		C220F1941EE949E200FC4299 /* GZMultipeerConnectivityQueryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZMultipeerConnectivityQueryController.h; sourceTree = "<group>"; };
+		C220F1951EE949E200FC4299 /* GZMultipeerConnectivityQueryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZMultipeerConnectivityQueryController.m; sourceTree = "<group>"; };
+		C251D88B1EE8DF7600D10985 /* GZBluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GZBluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C251D88F1EE8DF7600D10985 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C251D8911EE8DF7600D10985 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C251D8921EE8DF7600D10985 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C251D8941EE8DF7600D10985 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C251D8951EE8DF7600D10985 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C251D8981EE8DF7600D10985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C251D89A1EE8DF7600D10985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C251D89D1EE8DF7600D10985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C251D89F1EE8DF7600D10985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C251D8A61EE8E06700D10985 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		C251D8A81EE8E2D600D10985 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C251D8881EE8DF7600D10985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C220F18B1EE931AF00FC4299 /* GameKit.framework in Frameworks */,
+				C251D8A91EE8E2D600D10985 /* CoreBluetooth.framework in Frameworks */,
+				C251D8A71EE8E06700D10985 /* MultipeerConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C220F1831EE92F2F00FC4299 /* GameKit */ = {
+			isa = PBXGroup;
+			children = (
+				C220F1841EE92F4A00FC4299 /* GZGameKitController.h */,
+				C220F1851EE92F4A00FC4299 /* GZGameKitController.m */,
+				C220F1871EE92F9A00FC4299 /* GZCoreBluetoothController.h */,
+				C220F1881EE92F9A00FC4299 /* GZCoreBluetoothController.m */,
+				C220F1901EE9427D00FC4299 /* MultipeerConnectivity */,
+			);
+			path = GameKit;
+			sourceTree = "<group>";
+		};
+		C220F1901EE9427D00FC4299 /* MultipeerConnectivity */ = {
+			isa = PBXGroup;
+			children = (
+				C220F1911EE9427D00FC4299 /* GZMultipeerConnectivityController.h */,
+				C220F1921EE9427D00FC4299 /* GZMultipeerConnectivityController.m */,
+				C220F1941EE949E200FC4299 /* GZMultipeerConnectivityQueryController.h */,
+				C220F1951EE949E200FC4299 /* GZMultipeerConnectivityQueryController.m */,
+			);
+			path = MultipeerConnectivity;
+			sourceTree = "<group>";
+		};
+		C251D8821EE8DF7600D10985 = {
+			isa = PBXGroup;
+			children = (
+				C251D88D1EE8DF7600D10985 /* GZBluetooth */,
+				C251D88C1EE8DF7600D10985 /* Products */,
+				C251D8A51EE8E06700D10985 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C251D88C1EE8DF7600D10985 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C251D88B1EE8DF7600D10985 /* GZBluetooth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C251D88D1EE8DF7600D10985 /* GZBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				C251D8911EE8DF7600D10985 /* AppDelegate.h */,
+				C251D8921EE8DF7600D10985 /* AppDelegate.m */,
+				C220F1831EE92F2F00FC4299 /* GameKit */,
+				C251D8941EE8DF7600D10985 /* ViewController.h */,
+				C251D8951EE8DF7600D10985 /* ViewController.m */,
+				C220F1801EE8F47400FC4299 /* GZTableView.h */,
+				C220F1811EE8F47400FC4299 /* GZTableView.m */,
+				C251D8971EE8DF7600D10985 /* Main.storyboard */,
+				C251D89A1EE8DF7600D10985 /* Assets.xcassets */,
+				C251D89C1EE8DF7600D10985 /* LaunchScreen.storyboard */,
+				C251D89F1EE8DF7600D10985 /* Info.plist */,
+				C251D88E1EE8DF7600D10985 /* Supporting Files */,
+			);
+			path = GZBluetooth;
+			sourceTree = "<group>";
+		};
+		C251D88E1EE8DF7600D10985 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C251D88F1EE8DF7600D10985 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C251D8A51EE8E06700D10985 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C220F18A1EE931AF00FC4299 /* GameKit.framework */,
+				C251D8A81EE8E2D600D10985 /* CoreBluetooth.framework */,
+				C251D8A61EE8E06700D10985 /* MultipeerConnectivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C251D88A1EE8DF7600D10985 /* GZBluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C251D8A21EE8DF7600D10985 /* Build configuration list for PBXNativeTarget "GZBluetooth" */;
+			buildPhases = (
+				C251D8871EE8DF7600D10985 /* Sources */,
+				C251D8881EE8DF7600D10985 /* Frameworks */,
+				C251D8891EE8DF7600D10985 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GZBluetooth;
+			productName = GZBluetooth;
+			productReference = C251D88B1EE8DF7600D10985 /* GZBluetooth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C251D8831EE8DF7600D10985 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ATabc;
+				TargetAttributes = {
+					C251D88A1EE8DF7600D10985 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 228YX4533A;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C251D8861EE8DF7600D10985 /* Build configuration list for PBXProject "GZBluetooth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C251D8821EE8DF7600D10985;
+			productRefGroup = C251D88C1EE8DF7600D10985 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C251D88A1EE8DF7600D10985 /* GZBluetooth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C251D8891EE8DF7600D10985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C251D89E1EE8DF7600D10985 /* LaunchScreen.storyboard in Resources */,
+				C251D89B1EE8DF7600D10985 /* Assets.xcassets in Resources */,
+				C251D8991EE8DF7600D10985 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C251D8871EE8DF7600D10985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C220F1931EE9427D00FC4299 /* GZMultipeerConnectivityController.m in Sources */,
+				C220F1891EE92F9A00FC4299 /* GZCoreBluetoothController.m in Sources */,
+				C220F1821EE8F47400FC4299 /* GZTableView.m in Sources */,
+				C251D8961EE8DF7600D10985 /* ViewController.m in Sources */,
+				C220F1961EE949E200FC4299 /* GZMultipeerConnectivityQueryController.m in Sources */,
+				C251D8931EE8DF7600D10985 /* AppDelegate.m in Sources */,
+				C220F1861EE92F4A00FC4299 /* GZGameKitController.m in Sources */,
+				C251D8901EE8DF7600D10985 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C251D8971EE8DF7600D10985 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C251D8981EE8DF7600D10985 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C251D89C1EE8DF7600D10985 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C251D89D1EE8DF7600D10985 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C251D8A01EE8DF7600D10985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C251D8A11EE8DF7600D10985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C251D8A31EE8DF7600D10985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 228YX4533A;
+				INFOPLIST_FILE = GZBluetooth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gzt.GZBluetooth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C251D8A41EE8DF7600D10985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 228YX4533A;
+				INFOPLIST_FILE = GZBluetooth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gzt.GZBluetooth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C251D8861EE8DF7600D10985 /* Build configuration list for PBXProject "GZBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C251D8A01EE8DF7600D10985 /* Debug */,
+				C251D8A11EE8DF7600D10985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C251D8A21EE8DF7600D10985 /* Build configuration list for PBXNativeTarget "GZBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C251D8A31EE8DF7600D10985 /* Debug */,
+				C251D8A41EE8DF7600D10985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C251D8831EE8DF7600D10985 /* Project object */;
+}
