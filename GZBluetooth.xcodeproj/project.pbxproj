@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C220F1821EE8F47400FC4299 /* GZTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C220F1811EE8F47400FC4299 /* GZTableView.m */; };
 		C220F1861EE92F4A00FC4299 /* GZGameKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = C220F1851EE92F4A00FC4299 /* GZGameKitController.m */; };
-		C220F1891EE92F9A00FC4299 /* GZCoreBluetoothController.m in Sources */ = {isa = PBXBuildFile; fileRef = C220F1881EE92F9A00FC4299 /* GZCoreBluetoothController.m */; };
 		C220F18B1EE931AF00FC4299 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C220F18A1EE931AF00FC4299 /* GameKit.framework */; };
 		C220F1931EE9427D00FC4299 /* GZMultipeerConnectivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = C220F1921EE9427D00FC4299 /* GZMultipeerConnectivityController.m */; };
 		C220F1961EE949E200FC4299 /* GZMultipeerConnectivityQueryController.m in Sources */ = {isa = PBXBuildFile; fileRef = C220F1951EE949E200FC4299 /* GZMultipeerConnectivityQueryController.m */; };
@@ -21,6 +20,8 @@
 		C251D89E1EE8DF7600D10985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C251D89C1EE8DF7600D10985 /* LaunchScreen.storyboard */; };
 		C251D8A71EE8E06700D10985 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C251D8A61EE8E06700D10985 /* MultipeerConnectivity.framework */; };
 		C251D8A91EE8E2D600D10985 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C251D8A81EE8E2D600D10985 /* CoreBluetooth.framework */; };
+		C25FBD271EEE6A640046E834 /* GZCoreBluetoothController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25FBD261EEE6A640046E834 /* GZCoreBluetoothController.m */; };
+		C25FBD2A1EEE7DE90046E834 /* GZCBCentralController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25FBD291EEE7DE90046E834 /* GZCBCentralController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +29,6 @@
 		C220F1811EE8F47400FC4299 /* GZTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZTableView.m; sourceTree = "<group>"; };
 		C220F1841EE92F4A00FC4299 /* GZGameKitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZGameKitController.h; sourceTree = "<group>"; };
 		C220F1851EE92F4A00FC4299 /* GZGameKitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZGameKitController.m; sourceTree = "<group>"; };
-		C220F1871EE92F9A00FC4299 /* GZCoreBluetoothController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZCoreBluetoothController.h; sourceTree = "<group>"; };
-		C220F1881EE92F9A00FC4299 /* GZCoreBluetoothController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZCoreBluetoothController.m; sourceTree = "<group>"; };
 		C220F18A1EE931AF00FC4299 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		C220F1911EE9427D00FC4299 /* GZMultipeerConnectivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZMultipeerConnectivityController.h; sourceTree = "<group>"; };
 		C220F1921EE9427D00FC4299 /* GZMultipeerConnectivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZMultipeerConnectivityController.m; sourceTree = "<group>"; };
@@ -47,6 +46,10 @@
 		C251D89F1EE8DF7600D10985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C251D8A61EE8E06700D10985 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		C251D8A81EE8E2D600D10985 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		C25FBD251EEE6A640046E834 /* GZCoreBluetoothController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZCoreBluetoothController.h; sourceTree = "<group>"; };
+		C25FBD261EEE6A640046E834 /* GZCoreBluetoothController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZCoreBluetoothController.m; sourceTree = "<group>"; };
+		C25FBD281EEE7DE90046E834 /* GZCBCentralController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZCBCentralController.h; sourceTree = "<group>"; };
+		C25FBD291EEE7DE90046E834 /* GZCBCentralController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZCBCentralController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +71,7 @@
 			children = (
 				C220F1841EE92F4A00FC4299 /* GZGameKitController.h */,
 				C220F1851EE92F4A00FC4299 /* GZGameKitController.m */,
-				C220F1871EE92F9A00FC4299 /* GZCoreBluetoothController.h */,
-				C220F1881EE92F9A00FC4299 /* GZCoreBluetoothController.m */,
+				C25FBD241EEE6A640046E834 /* CoreBluetooth */,
 				C220F1901EE9427D00FC4299 /* MultipeerConnectivity */,
 			);
 			path = GameKit;
@@ -138,6 +140,17 @@
 				C251D8A61EE8E06700D10985 /* MultipeerConnectivity.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C25FBD241EEE6A640046E834 /* CoreBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				C25FBD251EEE6A640046E834 /* GZCoreBluetoothController.h */,
+				C25FBD261EEE6A640046E834 /* GZCoreBluetoothController.m */,
+				C25FBD281EEE7DE90046E834 /* GZCBCentralController.h */,
+				C25FBD291EEE7DE90046E834 /* GZCBCentralController.m */,
+			);
+			path = CoreBluetooth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,8 +231,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C220F1931EE9427D00FC4299 /* GZMultipeerConnectivityController.m in Sources */,
-				C220F1891EE92F9A00FC4299 /* GZCoreBluetoothController.m in Sources */,
+				C25FBD2A1EEE7DE90046E834 /* GZCBCentralController.m in Sources */,
 				C220F1821EE8F47400FC4299 /* GZTableView.m in Sources */,
+				C25FBD271EEE6A640046E834 /* GZCoreBluetoothController.m in Sources */,
 				C251D8961EE8DF7600D10985 /* ViewController.m in Sources */,
 				C220F1961EE949E200FC4299 /* GZMultipeerConnectivityQueryController.m in Sources */,
 				C251D8931EE8DF7600D10985 /* AppDelegate.m in Sources */,

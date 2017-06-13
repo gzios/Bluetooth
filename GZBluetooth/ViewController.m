@@ -12,6 +12,7 @@
 #import "GZGameKitController.h"
 #import "GZMultipeerConnectivityController.h"
 #import "GZMultipeerConnectivityQueryController.h"
+#import "GZCBCentralController.h"
 
 @interface ViewController ()<GZTableViewDeleagte>{
     GZTableView *_tabview;
@@ -30,7 +31,7 @@
     if (TARGET_IPHONE_SIMULATOR) {
        vcStr = @"GZMultipeerConnectivityController";
     }
-    _tabview.equipmentArray = @[@"GZCoreBluetoothController",@"GZGameKitController",vcStr].mutableCopy;
+    _tabview.equipmentArray = @[@"GZCBCentralController",@"GZCoreBluetoothController",@"GZGameKitController",vcStr].mutableCopy;
     _tabview.delegate =self;
     [self.view addSubview:_tabview];
     
