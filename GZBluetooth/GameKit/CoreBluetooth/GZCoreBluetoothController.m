@@ -11,8 +11,12 @@
 #import "GZTableView.h"
 
 #define kPeripheralName @"Kenshin Cui's Device" //外围设备名称
-#define kServuceUUID @"C4FB2359-72FE-4CA2-94D6-1F3CB16331EE" //服务的UUID
+#define kServuceUUID @"C4FB2349-72FE-4CA2-94D6-1F3CB16331EE" //服务的UUID
+#define kxServuceUUID @"C4FB2354-72FE-4CA2-94D6-1F3CB16331EE" //服务的UUID
+
 #define kCharacteristicUUID @"6A3E4B28-522D-4B3B-82A9-D5E2004534FC"  //特征的UUID
+#define krCharacteristicUUID @"6A3E4B28-522D-4B3B-82A9-D5E2004334FC"  //特征的UUID
+#define kreCharacteristicUUID @"6A3E4B28-522D-4B3B-82A9-D2E2004334FC"  //特征的UUID
 
 
 @interface GZCoreBluetoothController ()<CBPeripheralManagerDelegate>
@@ -60,13 +64,7 @@
 #pragma mark  添加服务
 //创建特征、服务并添加服务到外围设备
 -(void)setupServer{
-    //1.创建特征为UUID的对象
-    CBUUID *charachteristicUUID =[CBUUID UUIDWithString:kCharacteristicUUID];
-    
-    
-//    CBUUID *charachteristicUUID =[CBUUID UUIDWithString:CBUUIDCharacteristicUserDescriptionString];
-
-    //特征值
+     //特征值
 //    NSString *valueStr =kPeripheralName;
 //    NSData *value =[valueStr dataUsingEncoding:NSUTF8StringEncoding];
     //创建特征
@@ -110,29 +108,57 @@
      CBAttributePermissionsReadEncryptionRequired	= 0x04,
      CBAttributePermissionsWriteEncryptionRequired	= 0x08
      */
-    CBMutableCharacteristic *characteristicM =[[CBMutableCharacteristic alloc] initWithType:charachteristicUUID properties:CBCharacteristicPropertyNotify value:nil permissions:CBAttributePermissionsReadable];
+   
+    //characteristics字段描述
+    CBUUID *CBUUIDCharacteristicUserDescriptionStringUUID = [CBUUID UUIDWithString:CBUUIDCharacteristicUserDescriptionString];
+    
     /*
      可以通知的Characteristic
      properties：CBCharacteristicPropertyNotify
      permissions CBAttributePermissionsReadable
      */
- 
+    CBMutableCharacteristic *notiyCharacteristic = [[CBMutableCharacteristic alloc]initWithType:[CBUUID UUIDWithString:kCharacteristicUUID] properties:CBCharacteristicPropertyNotify value:nil permissions:CBAttributePermissionsReadable];
+
     
-    self.characteristicM =characteristicM;
-    //    CBMutableCharacteristic *characteristicM=[[CBMutableCharacteristic alloc]initWithType:characteristicUUID properties:CBCharacteristicPropertyRead value:nil permissions:CBAttributePermissionsReadable];
-    //    characteristicM.value=value;
     
-    //创建服务并设置特征
+    /*
+     可读写的characteristics
+     properties：CBCharacteristicPropertyWrite | CBCharacteristicPropertyRead
+     permissions CBAttributePermissionsReadable | CBAttributePermissionsWriteable
+     */
+    CBMutableCharacteristic *readwriteCharacteristic = [[CBMutableCharacteristic alloc]initWithType:[CBUUID UUIDWithString:krCharacteristicUUID] properties:CBCharacteristicPropertyWrite | CBCharacteristicPropertyRead value:nil permissions:CBAttributePermissionsReadable | CBAttributePermissionsWriteable];
+
+    //设置description
+    CBMutableDescriptor *readwriteCharacteristicDescription1 = [[CBMutableDescriptor alloc]initWithType: CBUUIDCharacteristicUserDescriptionStringUUID value:@"name"];
+    [readwriteCharacteristic setDescriptors:@[readwriteCharacteristicDescription1]];
+    
+    /*
+     只读的Characteristic
+     properties：CBCharacteristicPropertyRead
+     permissions CBAttributePermissionsReadable
+     */
+    CBMutableCharacteristic *readCharacteristic = [[CBMutableCharacteristic alloc]initWithType:[CBUUID UUIDWithString:kreCharacteristicUUID] properties:CBCharacteristicPropertyRead value:nil permissions:CBAttributePermissionsReadable];
+    
+    
+      //创建服务并设置特征
     //创建服务的UUID 对象
     CBUUID *serviceUUID =[CBUUID UUIDWithString:kServuceUUID];
     //创建服务
     CBMutableService *serviceM =[[CBMutableService alloc] initWithType:serviceUUID primary:YES];
     //设置服务的特征
-    [serviceM setCharacteristics:@[characteristicM]];
+    [serviceM setCharacteristics:@[notiyCharacteristic,readwriteCharacteristic]];
+    
+    //service2初始化并加入一个characteristics
+    CBMutableService *service2 = [[CBMutableService alloc]initWithType:[CBUUID UUIDWithString:kxServuceUUID] primary:YES];
+    [service2 setCharacteristics:@[readCharacteristic]];
+    
     //将服务添加到外围设备上
     [self.peripheralManager addService:serviceM];
+    [self.peripheralManager addService:service2];
+
 }
 //外围设备添加服务后调用
+int asdasd;
 -(void)peripheralManager:(CBPeripheralManager *)peripheral didAddService:(CBService *)service error:(NSError *)error{
     
     if (error) {
@@ -140,11 +166,21 @@
         [self showConnectionPrompt:[NSString stringWithFormat:@"向外围设备添加服务失败，错误详情：%@",error.localizedDescription]];
         return;
     }
-    //添加服务后开始广播
-    NSDictionary *dic =@{CBAdvertisementDataLocalNameKey:kPeripheralName};//广播设置
-    [self.peripheralManager startAdvertising:dic]; //开始广播
-    NSLog(@"向外围设备添加了服务并开始广播...");
-    [self showConnectionPrompt:@"向外围设备添加了服务并开始广播..."];
+    asdasd ++;
+    if (asdasd == 2) {
+        //添加服务后开始广播
+//        NSDictionary *dic =@{CBAdvertisementDataLocalNameKey:kPeripheralName};//广播设置
+//        [self.peripheralManager startAdvertising:dic]; //开始广播
+//        
+        [self.peripheralManager startAdvertising:@{
+                                              CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:kServuceUUID],[CBUUID UUIDWithString:kxServuceUUID]],
+                                              CBAdvertisementDataLocalNameKey:@"测试"
+                                              }
+         ];
+        NSLog(@"向外围设备添加了服务并开始广播...");
+        [self showConnectionPrompt:@"向外围设备添加了服务并开始广播..."];
+    }
+    
     
 }
 //开始广播时调用
@@ -194,7 +230,7 @@
 
 #pragma mark - 开始广播
 -(void)startClick:(UIBarButtonItem *)sender {
-    _peripheralManager =[[CBPeripheralManager alloc] initWithDelegate:self queue:nil];
+    self.peripheralManager =[[CBPeripheralManager alloc] initWithDelegate:self queue:nil];
     
 }
 #pragma mark - 更新
